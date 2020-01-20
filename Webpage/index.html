@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Main page</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <style>
+        .design {
+            color: black;
+        }
+    </style>
+</head>
+
+<body style="background-color: beige;">
+    <h1 style="text-align: center;">ELDA</h1>
+    <h6 style="text-align: center;">Equal Load Distribution Application</h6>
+    <br /><br />
+
+    <form>
+        <div class="form-group row">
+            <label for="inputEmail3" class="col-sm-2 col-form-label" style="padding-left: 4%;"> File</label>
+            <div class="col-sm-10">
+                <input type="email" class="form-control" id="inputEmail3" placeholder="JSON File">
+            </div>
+        </div>
+        <div class="form-group row">
+            <div class="col-sm-10 offset-sm-2">
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+        </div>
+    </form>
+
+
+    <div id="accordion" role="tablist">
+        <div class="card">
+            <div class="card-header" role="tab" id="headingOne">
+                <h5 class="mb-0">
+                    <a data-toggle="collapse" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne"
+                        class="design">
+                        Empty Time Graph
+                    </a>
+                </h5>
+            </div>
+
+            <div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne" style="">
+                <div class="card-body">
+                    <img src="pictures\empty time.png" alt="Empty time graph" height="450" width="800">
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header" role="tab" id="headingTwo">
+                <h5 class="mb-0">
+                    <a class="design" data-toggle="collapse" href="#collapseTwo" aria-expanded="true"
+                        aria-controls="collapseTwo">
+                        Queue at Shovel Graph
+                    </a>
+                </h5>
+            </div>
+            <div id="collapseTwo" class="collapse show" role="tabpanel" aria-labelledby="headingTwo" style="">
+                <div class="card-body">
+                    <img src="pictures\QUEUE_AT_LU.png" alt="Queue at shovel time graph" height="450" width="800">
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header" role="tab" id="headingThree">
+                <h5 class="mb-0">
+                    <a data-toggle="collapse" href="#collapseThree" aria-expanded="true" aria-controls="collapseThree"
+                        class="design">
+                        Spotting Time Graph
+                    </a>
+                </h5>
+            </div>
+
+            <div id="collapseThree" class="collapse show" role="tabpanel" aria-labelledby="headingThree" style="">
+                <div class="card-body">
+                    <img src="pictures\SPOTTING_TIME.png" alt="Spotting time graph" height="450" width="800">
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header" role="tab" id="headingFour">
+                <h5 class="mb-0">
+                    <a data-toggle="collapse" href="#collapseFour" aria-expanded="true" aria-controls="collapseFour"
+                        class="design">
+                        Loading Time Graph
+                    </a>
+                </h5>
+            </div>
+
+            <div id="collapseFour" class="collapse show" role="tabpanel" aria-labelledby="headingFour" style="">
+                <div class="card-body">
+                    <img src="pictures\LOADING_TIME.png" alt="Loading time graph" height="450" width="800">
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header" role="tab" id="headingFive">
+                <h5 class="mb-0">
+                    <a data-toggle="collapse" href="#collapseFive" aria-expanded="true" aria-controls="collapseFive"
+                        class="design">
+                        Hauling Time Graph
+                    </a>
+                </h5>
+            </div>
+
+            <div id="collapseFive" class="collapse show" role="tabpanel" aria-labelledby="headingFive" style="">
+                <div class="card-body">
+                    <img src="pictures\HAULING_TIME.png" alt="Hauling time graph" height="450" width="800">
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header" role="tab" id="headingOne">
+                <h5 class="mb-0">
+                    <a data-toggle="collapse" href="#collapseSix" aria-expanded="true" aria-controls="collapseSix"
+                        class="design">
+                        Waiting Time at Dump Graph
+                    </a>
+                </h5>
+            </div>
+
+            <div id="collapseSix" class="collapse show" role="tabpanel" aria-labelledby="headingSix" style="">
+                <div class="card-body">
+                    <img src="pictures\WATINING_TIME.png" alt="Waiting time graph" height="450" width="800">
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header" role="tab" id="headingSeven">
+                <h5 class="mb-0">
+                    <a data-toggle="collapse" href="#collapseSeven" aria-expanded="true" aria-controls="collapseSeven"
+                        class="design">
+                        Dumping Time
+                    </a>
+                </h5>
+            </div>
+
+            <div id="collapseSeven" class="collapse show" role="tabpanel" aria-labelledby="headingSeven" style="">
+                <div class="card-body">
+                    <img src="pictures\DUMPING_TIME.png" alt="Dumping time graph" height="450" width="800">
+                </div>
+            </div>
+
+            <footer>
+                <a href="page2.html">Next Page</a>
+            </footer>
+        </div>
+
+
+    </div>
+
+
+</body>
+
+</html>
